@@ -20,14 +20,14 @@ const add = () =>{
     });
 
     ol.innerHTML += `
-    <li class="text-sm">
-        <div class="grid grid-cols-5 mr-11 md:mr-48">
-            <div class="col-span-2">${medicine.value}</div>
-            <div class="">${quantity.value}mg</div>
-            <div class="text-right">
-                <span id="m" class="ml-2 md:ml-10 md:mr-3">${arr[0]}</span> +
+    <li class="text-xs md:text-sm">
+        <div class="flex justify-between mx-1 md:grid grid-cols-4 md:grid-cols-5 pl-4 md:pl-6 md:mx-auto md:mr-48">
+            <div class="text-left md:text-center md:col-span-2">${medicine.value}</div>
+            <div class="text-left  md:text-center">${quantity.value}mg</div>
+            <div class="md:text-right">
+                <span id="m" class="ml-6 md:ml-10 md:mr-3">${arr[0]}</span> +
                 <span id="no" class="mx-0  md:mx-4">${arr[1]}</span> +
-                <span id="ni" class="mr-1 md:mr-3 ml-0 md:ml-4">${arr[2]}</span>
+                <span id="ni" class="md:mr-3 ml-0 md:ml-4">${arr[2]}</span>
             </div>
             <div class="text-right text-red-600 pr-4">
                 <i class="bi bi-file-earmark-x-fill" class="ml-2"></i>
