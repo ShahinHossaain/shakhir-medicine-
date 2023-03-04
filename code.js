@@ -1,4 +1,4 @@
-const medicine = getQuerySelector('#medicine-name');
+const medicine = getQuerySelector('.peer');
 const quantity = getQuerySelector('#quantity');
 const morning = getQuerySelector('#morning');
 const noon = getQuerySelector('#noon');
@@ -50,3 +50,6 @@ const add = () =>{
         element.checked = false;
     });
 }
+
+const selected  = document.querySelector('.peer');
+console.log(selected.value);
